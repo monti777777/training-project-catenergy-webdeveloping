@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" lang="ru">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Форма">
+  <link href="css/min.style.css" rel="stylesheet">
+  <title>CAT ENERGY</title>
+</head>
+
+<body>
+  <div style="display: none">
+    <include src="img/sprite.svg"></include>
+  </div>
+  <header class="page-header page-header--inner">
+    <div class="page-header__level page-header__level--1">
+      <div class="page-header__logo">
+        <a href="./index.html" class="page-header__logo-link">
+          Логотип
+          <span class="page-header__logo-image"></span>
+        </a>
+      </div>
+      <div class="page-header__site-name">
+        <b>CAT</b> ENERGY
+      </div>
+
+      <nav class="main-nav main-nav__closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden-button">Открыть
+            меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item ">
+              <a href="./index.html" class="">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="./catalog.html" class="">Каталог продукции</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="./form.html" class="">Подбор программы</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a href="#" class="user-list__login">Войти</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="page-form">
+    <h1 class="page-form__title site-title">Подбор программы</h1>
+    <p class="page-form__text">ЗАПОЛНИТЕ АНКЕТУ И МЫ ПОДБЕРЕМ</br> ВАМ ПРОГРАММУ ПИТАНИЯ ДЛЯ ВАШЕГО КОТА</p>
+    <div class="form">
+      <form action="get" methot="post">
+        <div class="form__wrapper">
+          <section class="form__data form__data--1 form__data--bottom-line">
+            <ul class="data-list">
+              <li class="data-list__item">
+                <label class="data-list__value" for="name"> ИМЯ:<sup>*</sup></label>
+                <input class="data-list__field data-list__field--1" type="text" id="name" name="name"
+                  placeholder="БАРСИК">
+              </li>
+              <li class="data-list__item">
+                <label class="data-list__value" for="weight">ВЕС (КГ):<sup>*</sup></label>
+                <input class="data-list__field data-list__field--2 " type="text" id="weight" name="weight"
+                  placeholder="7">
+              </li>
+              <li class="data-list__item">
+                <label class="data-list__value" for="age">ВОЗРАСТ (ЛЕТ):<sup>*</sup></label>
+                <input class="data-list__field data-list__field--3 " type="text" id="age" placeholder="7">
+              </li>
+            </ul>
+          </section>
+          <section class="form__data form__data--1 form__data--bottom-line">
+            <ul class="data-list data-list--desktop">
+              <li class="data-list__item data-list__item--1">
+                <span class="data-list__btn btn--radio"></span>
+                <input class="data-list__field-radio" type="radio" id="weight-loss" name="data" checked>
+                <label for="weight-loss" class="data-list__value">ПОХУДЕНИЕ</label>
+              </li>
+              <li class="data-list__item data-list__item--1">
+                <span class="data-list__btn btn--radio"></span>
+                <input class="data-list__field-radio" type="radio" id="weight-gain" name="data">
+                <label for="weight-gain" class="data-list__value data-list__value--1">НАБОР
+                  МАССЫ</label>
+              </li>
+              <li class="data-list__item data-list__item--1">
+                <span class="data-list__btn btn--radio"></span>
+                <input class="data-list__field-radio" type="radio" id="advice" name="data">
+                <label for="advice" class="data-list__value">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</label>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <section class="form__data">
+          <div class="form__big-heading big-heading">
+            <h2 class="form__title h2-title">Контактные данные (владельца кота)</h2>
+            <span class="decoration-line"></span>
+          </div>
+          <div class="form__wrapper-2">
+            <ul class="data-list data-list--desktop-2">
+              <li class="data-list__item">
+                <label class="data-list__value" for="age">E-MAIL:<sup>*</sup></label>
+                <input class="data-list__field data-list__field--4" type="text" id="age" name="e-mail"
+                  placeholder="KUKLACHEV@gmail.com">
+              </li>
+              <li class="data-list__item">
+                <label class="data-list__value" for="age">ТЕЛЕФОН:<sup>*</sup></label>
+                <input class="data-list__field data-list__field--5" type="text" id="age" name="phone-number"
+                  placeholder="8 (960) 900-60-90">
+              </li>
+            </ul>
+          </div>
+
+        </section>
+        <section class="form__data">
+          <div class="data__big-heading big-heading">
+            <h2 class="data__title h2-title">Комментарий</h2>
+            <span class="decoration-line"></span>
+          </div>
+          <div class="data__comments">
+            <textarea class="data__textarea" id="comments" name="comments"
+              placeholder="РАССКАЖИТЕ ОБ ВСЕХ ПОВОДКАХ КОТА">
+            </textarea>
+          </div>
+        </section>
+        <section class="form__data">
+          <div class="data__big-heading big-heading">
+            <h2 class="data__title h2-title">Дополнительно</h2>
+            <span class="decoration-line"></span>
+          </div>
+          <div class="form__wrapper-3">
+            <ul class="data-list  data-list--add">
+              <li class="data-list__item data-list__item--1">
+                <span class="data-list__btn btn-checkbox"></span>
+                <input class="data-list__field-сheckbox" type="checkbox" id="sweetener" name="sweetener" checked>
+                <label for="sweetener" class="data-list__value">САХАРОЗАМЕНИТЕЛЬ</label>
+              </li>
+              <li class="data-list__item data-list__item--1">
+                <span class="data-list__btn btn-checkbox"></span>
+                <input class="data-list__field-сheckbox" type="checkbox" id="water" name="water">
+                <label for="water" class="data-list__value">ПИТЬЕВАЯ ВОДА</label>
+              </li>
+              <li class="data-list__item data-list__item--1">
+                <span class="data-list__btn btn-checkbox"></span>
+                <input class="data-list__field-сheckbox" type="checkbox" id="milk" name="milk">
+                <label for="milk" class="data-list__value">МОЛОКО</label>
+              </li>
+              <li class="data-list__item data-list__item--1">
+                <span class="data-list__btn btn-checkbox"></span>
+                <input class="data-list__field-сheckbox" type="checkbox" id="vitamins" name="vitamins">
+                <label for="vitamins" class="data-list__value">ВИТАМИНЫ</label>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="form__data form__data--button">
+          <button class="form__button button">ОТПРАВИТЬ ЗАЯВКУ</button>
+          <small class="form__legend">
+            <sup>*</sup> - Обязательные поля
+          </small>
+        </div>
+
+      </form>
+    </div>
+
+  </main>
+  <footer class="page-footer">
+    <section class="location">
+      <div class="location__map">
+        <picture>
+          <source type="image/webp" media="(min-width:1440px)"
+            srcset="img/map-pin-desktop.webp 1x, img/map-pin-desktop-2x.webp 2x">
+          <source type="image/webp" media="(min-width:768px)"
+            srcset="img/map-pin-tablet.webp 1x, img/map-pin-tablet-2x.webp 2x">
+          <source type="image/webp" srcset="img/map-pin-mobile.webp 1x, img/map-pin-mobile-2x.webp 2x">
+
+
+          <source media="(min-width:1440px)" srcset="img/map-pin-desktop.jpg 1x, img/map-pin-desktop-2x.jpg 2x">
+          <source media="(min-width:768px)" srcset="img/map-pin-tablet.jpg 1x, img/map-pin-tablet-2x.jpg 2x">
+          <img class="location__map-mobile" src="img/map-pin-mobile.jpg" srcset="img/map-pin-mobile-2x.jpg 2x"
+            alt="НАШ АДРЕС НА КАРТЕ">
+
+
+        </picture>
+        <div class="location__address location__address--catalog">
+          <span class="location__to-dealers">Приглашаем</br> к сотрудничеству</br> дилеров!</span>
+          <span class="location__street">ул. Большая</br> Конюшенная, д. 19/8</br> Санкт-Петербург</span>
+        </div>
+      </div>
+    </section>
+    <div class="page-footer__wrapper">
+      <div class="page-footer__footer-name">
+        <b>CAT</b> ENERGY
+      </div>
+      <section class="page-footer__social social">
+        <b class="social__title visually-hidden">Давайте дружить!</b>
+        <ul class="social__list">
+          <li class="social__items">
+            <a href="#" class="social__link social__link--vk">
+              Вконтакте
+            </a>
+          </li>
+          <li class="social__items">
+            <a href="#" class="social__link social__link--instagram">
+              Инстаграмм
+            </a>
+          </li>
+          <li class="social__items">
+            <a href="#" class="social__link social__link--fb">
+              Фейсбук
+            </a>
+          </li>
+      </section>
+      <section class="page-footer__copyright copyright">
+        <span class="copyright__text">HTML Academy</span>
+        <a class="copyright__picture" href="#">
+          <span class="copyright__image">Логотип студии</span>
+        </a>
+      </section>
+
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

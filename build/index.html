@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" lang="ru">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Главная страница">
+  <!--
+  <link rel="preload" href="./build/fonts/Oswaldbold.woff2" as="font">
+  <link rel="preload" href="./build/fonts/Oswaldregular.woff2" as="font">
+  -->
+  <link href="css/min.style.css" rel="stylesheet">
+
+
+  <title>CAT ENERGY</title>
+</head>
+
+<body>
+
+  <div style="display: none">
+    <include src="img/sprite.svg"></include>
+  </div>
+
+  <svg style="display: none;">
+    <symbol viewbox="0 0 512 512" id="icon">
+      <path
+        d="    M467.481,142.221c3.045-10.283,0-17.852-14.644-17.852h-48.457c-12.34,0-18.018,6.499-21.061,13.739    c0,0-24.68,60.138-59.563,99.133c-11.27,11.271-16.453,14.891-22.623,14.891c-3.042,0-7.733-3.621-7.733-13.904v-96.008    c0-12.34-3.456-17.852-13.657-17.852h-76.18c-7.733,0-12.34,5.759-12.34,11.106c0,11.681,17.441,14.396,19.251,47.304v71.41    c0,15.631-2.798,18.509-8.967,18.509c-16.454,0-56.437-60.384-80.13-129.49c-4.771-13.409-9.461-18.839-21.884-18.839H51.037    c-13.821,0-16.619,6.499-16.619,13.739c0,12.833,16.454,76.593,76.593,160.836c40.065,57.505,96.502,88.687,147.836,88.687    c30.851,0,34.636-6.91,34.636-18.839c0-54.957-2.797-60.141,12.671-60.141c7.156,0,19.497,3.619,48.293,31.344    c32.905,32.908,38.335,47.636,56.764,47.636h48.456c13.821,0,20.815-6.91,16.783-20.569c-9.214-28.71-71.492-87.78-74.289-91.729    c-7.157-9.215-5.102-13.329,0-21.557C402.243,253.696,461.394,170.439,467.481,142.221L467.481,142.221z" />
+    </symbol>
+    <symbol viewbox="0 0 512 512" id="fb-icon">
+      <path
+        d="M288,192v-38.1c0-17.2,3.8-25.9,30.5-25.9H352V64h-55.9c-68.5,0-91.1,31.4-91.1,85.3V192h-45v64h45v192h83V256h56.4l7.6-64  H288z M330.2,240h-41.1H272v15.5V432h-51V255.5V240h-14.9H176v-32h30.1H221v-16.5v-42.2c0-24.5,5.4-41.2,15.5-51.8  C247.7,85.5,267.6,80,296.1,80H336v32h-17.5c-12,0-27.5,1.1-37.1,11.7c-8.1,9-9.4,20.1-9.4,30.1v37.6V208h17.1H334L330.2,240z" />
+    </symbol>
+  </svg>
+  <header class="page-header page-header--index">
+    <div class="page-header__level page-header__level--1">
+      <div class="page-header__logo">
+        <a href="./index.html" class="page-header__logo-link">
+          Логотип
+          <span class="page-header__logo-image"></span>
+        </a>
+      </div>
+      <div class="page-header__site-name">
+        <b>CAT</b> ENERGY
+      </div>
+
+      <nav class="main-nav main-nav__closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden-button">Открыть
+            меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list site-list--desktop">
+            <li class="site-list__item site-list__item--active ">
+              <a href="#" class="">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="./catalog.html" class="">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="./form.html" class="">Подбор программы</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list site-list--desktop">
+            <li class="user-list__item">
+              <a href="login.html" class="user-list__login">Войти</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="page-header__level page-header__level--2">
+      <section class="feeding">
+        <h1 class="feeding__title">Функциональное питание для котов</h1>
+        <p class="feeding__slogan">Занялся собой? Займись котом!</p>
+        <div class="feeding__logo">
+          <picture>
+            <source type="image/webp" srcset="img/index-can-mobile.webp">
+            <img class="feeding__logo-image" src="img/index-can-mobile.png" alt="CAT ENERGY" width="280" height="270">
+          </picture>
+        </div>
+        <a href="" class="feeding__button button">Подобрать программу</a>
+      </section>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="programs">
+      <div class="programs__type">
+        <div class="programs__wrapper">
+          <div class="programs__pic-title">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/cat-slim-desktop.png">
+              <img class="programs__pic" src="img/cat-slim-mobile.png" alt="">
+            </picture>
+            <h3 class="programs__title programs__title--slim">Похудение</h3>
+          </div>
+          <p class="programs__description">
+            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям. Пора на диету!
+            Cat Energy Slim поможет вашему питомцу сбросить вес
+          </p>
+          <div class="programs_catalog">
+            <a href="" class="programs__to-catalog">Каталог Pro</a>
+          </div>
+        </div>
+        <div class="programs__image programs__image--slim">
+          <img class="programs__pic-image" src="img/cat-slim.png" width="200" height="212" alt="">
+        </div>
+      </div>
+      <div class="programs__type">
+        <div class="programs__wrapper">
+          <div class="programs__pic-title">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/cat-pro-desktop.png">
+              <img class="programs__pic" src="img/cat-pro-mobile.png" alt="">
+            </picture>
+
+            <h3 class="programs__title programs__title--pro">Набор массы</h3>
+          </div>
+          <p class="programs__description">
+            Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему
+            коту нарастить необходимые мышцы!
+          </p>
+          <div class="programs_catalog">
+            <a href="" class="programs__to-catalog">Каталог Pro</a>
+          </div>
+        </div>
+        <div class="programs__image">
+          <img class="programs__pic-image" src="img/cat-pro.png" width="268" height="200" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="process">
+      <h2 class="process__title site-title">Как это работает</h2>
+      <div class="process__wrapper">
+        <ul class="process__list">
+          <li class="process__item process__item--nutrition">
+            <p class="process__description">Функциональное питание содержит только полезные питательные
+              вещества
+            </p>
+            <span class="process__number">1</span>
+          </li>
+          <li class="process__item process__item--powder">
+            <p class="process__description">Выпускается в виде порошка, который нужно залить кипятком и
+              готово
+            </p>
+            <span class="process__number">2</span>
+          </li>
+          <li class="process__item process__item--eating">
+            <p class="process__description">Замените один-два приема обычной еды на наше функциональное
+              питание</p>
+            <span class="process__number">3</span>
+          </li>
+          <li class="process__item process__item--time">
+            <p class="process__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего
+              питомца
+            </p>
+            <span class="process__number">4</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="example">
+      <div class="example__wrapper">
+        <h2 class="example__title site-title">Живой пример</h2>
+        <p class="example__text">Борис сбросил 5 кг за 2 месяца,просто заменив свой обычный корм на Cat
+          Energy
+          Slim.
+          Отличный результат без изнуряющих тренировок. При этом он не менял своих привычек и по-прежнему
+          спит
+          по 16 часов в день.
+        </p>
+        <div class="example__result-cost">
+          <div class="example__result">
+            <p class="result__how-many"><span class="result__number">5 кг</span>снижение<br> веса</p>
+            <p class="result__how-many"><span class="result__number">60 дней</span>затрачено<br>
+              времени
+            </p>
+          </div>
+          <p class="example__cost">Затраты на питание: 15 000 руб.</p>
+        </div>
+      </div>
+      <div class="example__difference">
+        <picture>
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/before-desktop.webp 1x, img/before-desktop@2x.webp 2x">
+          <source type="image/webp" srcset="img/before-desktop.webp 1x, img/before-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/before-desktop.png 1x, img/before-desktop.png 2x">
+          <img class="difference__photo--mobile" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x"
+            alt="">
+        </picture>
+        <div class="difference__controls">
+          <button class="controls__btn controls__btn--before">Было</button>
+          <div class="controls__range">
+            <div class="controls__scale">
+              <div class="controls__bar"></div>
+            </div>
+            <div class="controls__range-toggle"></div>
+          </div>
+          <button class="controls__btn controls__btn--after">Стало</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <section class="location">
+      <div class="location__map">
+        <picture>
+          <source type="image/webp" media="(min-width:1440px)"
+            srcset="img/map-pin-desktop.webp 1x, img/map-pin-desktop-2x.webp 2x">
+          <source type="image/webp" media="(min-width:768px)"
+            srcset="img/map-pin-tablet.webp 1x, img/map-pin-tablet-2x.webp 2x">
+          <source type="image/webp" srcset="img/map-pin-mobile.webp 1x, img/map-pin-mobile-2x.webp 2x">
+
+
+          <source media="(min-width:1440px)" srcset="img/map-pin-desktop.jpg 1x, img/map-pin-desktop-2x.jpg 2x">
+          <source media="(min-width:768px)" srcset="img/map-pin-tablet.jpg 1x, img/map-pin-tablet-2x.jpg 2x">
+          <img class="location__map-mobile" src="img/map-pin-mobile.jpg" srcset="img/map-pin-mobile-2x.jpg 2x"
+            alt="НАШ АДРЕС НА КАРТЕ">
+
+
+        </picture>
+        <div class="location__address">
+          <span class="location__to-dealers">Приглашаем<br> к сотрудничеству<br> дилеров!</span>
+          <span class="location__street">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</span>
+        </div>
+      </div>
+    </section>
+    <div class="page-footer__wrapper">
+      <div class="page-footer__footer-name">
+        <b>CAT</b> ENERGY
+      </div>
+      <section class="page-footer__social social">
+        <b class="social__title visually-hidden">Давайте дружить!</b>
+        <ul class="social__list">
+          <li class="social__items">
+            <a href="#" class="social__link social__link--vk">
+              Вконтакте
+            </a>
+          </li>
+          <li class="social__items">
+            <a href="#" class="social__link social__link--instagram">
+              Инстаграмм
+            </a>
+          </li>
+          <li class="social__items">
+            <a href="#" class="social__link social__link--fb">
+              Фейсбук
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-footer__copyright copyright">
+        <span class="copyright__text">HTML Academy</span>
+        <a class="copyright__picture" href="#">
+          <span class="copyright__image">Логотип студии</span>
+        </a>
+      </section>
+
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

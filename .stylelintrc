@@ -1,0 +1,6 @@
+{
+  "rules": {
+  "selector-max-class": 2,
+  "max-empty-lines": 3
+  }
+}
